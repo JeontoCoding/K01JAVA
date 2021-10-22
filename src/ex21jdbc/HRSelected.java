@@ -26,7 +26,7 @@ public class HRSelected {
 					이어지게 되어 SyntaxError가 발생한다.
 				 */
 				String sql = " SELECT * FROM employees WHERE "
-						+ " department_id=30 "
+						+ " department_id=50 "
 						+ " ORDER BY employee_id DESC ";
 				
 				/*

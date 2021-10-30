@@ -7,10 +7,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-/*
-인터페이스를 구현한 클래스로 extends 대신 implements를 사용한다.
-또한 용어도 '상속' 이 아닌 '구현' 이라 표현한다.
- */
 
 public class IConnectImpl implements IConnect {
 	
@@ -18,12 +14,10 @@ public class IConnectImpl implements IConnect {
 	public PreparedStatement psmt; // 동적쿼리 실행을 위한 객체
 	public ResultSet rs;
 	
-	//기본(디폴트)생성자
 	public IConnectImpl() {
 		System.out.println("IConnectImpl 기본생성자 호출");
 	}
 	
-	//인자생성자1 : 아이디, 패스워드를 인자로 받음
 	public IConnectImpl(String user, String pass) {
 		System.out.println("IConnectImpl 인자생성자 호출");
 		try {
